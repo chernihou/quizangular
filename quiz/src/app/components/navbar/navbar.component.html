@@ -1,0 +1,32 @@
+<mat-toolbar style="background-color: #b58ce5;">
+    <a [routerLink]="''" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu_book</mat-icon>
+    </a>
+    <span>WeLoveQuiz</span>
+    <span class="example-spacer"></span>
+    <a *ngIf="!isLoggedIn"
+    [routerLink]="'/login'"  mat-icon-button class="example-icon favorite-icon" 
+    aria-label="Example icon-button with heart icon" style="color:white;font-size: 17px;">
+     Sign In
+    </a>
+
+    <a *ngIf="!isLoggedIn"
+     [routerLink]="'/signup'" mat-icon-button class="example-icon favorite-icon" 
+     style="margin-right: 30px;margin-left: 30px;color:white;font-size: 17px;"aria-label="Example icon-button with share icon">
+     Sign up
+    </a>
+
+    <button
+    *ngIf="isLoggedIn && user"
+    mat-button routerLink="/dashboard/profile" style="margin-right:10px;color:white;font-size: 17px;"class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+   {{user.username}}
+  </button>
+
+    <a (click)="logout()"
+    *ngIf="isLoggedIn"
+     mat-icon-button style="margin-right:20px;color:white;font-size: 17px;" class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+   Logout
+    </a>
+
+    
+  </mat-toolbar>

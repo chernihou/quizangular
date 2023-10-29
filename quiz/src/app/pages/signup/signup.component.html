@@ -1,0 +1,60 @@
+
+<body>
+
+
+    <form (ngSubmit)="formSubmit()">
+      <div class="row">
+          
+       
+   
+  
+        <div class="col">
+          <img class="w3d45 w3d47" alt="Register WeLoveDevs" src="https://process.filestackapi.com/auto_image/compress/KLD4JhCQTi7u5GImLYCg"  style="
+          height: auto;max-width: 100%;">
+             
+  
+        </div>
+  
+        <div class="col1">
+          <mat-card style="margin-right: 10%;">
+              
+          <h2 class="text-center">Sign Up</h2>
+          <div>
+          <input [(ngModel)]="user.firstname" type="text" name="firstname" placeholder="Enter firstname" required>
+          </div>
+          <div>
+          <input [(ngModel)]="user.lastname" type="text" name="lastname" placeholder="Enter Lastname" required>
+          </div>
+          <div>
+          <input [(ngModel)]="user.email" type="text" name="email" placeholder="Enter email" required>
+          </div>
+          <div>
+          <input [(ngModel)]="user.phone" type="number" name="phone" placeholder="Enter phone number" required>
+          </div>
+          <div>
+          <input [(ngModel)]="user.username" type="text" name="username" placeholder="Enter username" required>
+          </div>
+          <input [(ngModel)]="user.password" type="password" name="password" placeholder="Password" required>
+          
+          <div class="btn-toolbar">
+          <button type="submit" style="background-color: #83B5A6;color: white;">Register</button>
+          <button type="reset" style="background-color: #F36B80;color: white;">Cancel</button>
+        
+      </div>
+   
+      <div>
+        <p class="small fw-bold mt-2 pt-1 mb-0">Already have an account ? <a routerLink='/login'
+            class="link-danger">Login</a></p>
+      </div>
+    </mat-card>
+        </div>
+   
+      
+      </div>
+     
+    </form>
+  
+  
+  
+  </body>
+  

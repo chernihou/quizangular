@@ -1,0 +1,42 @@
+
+<body>
+  
+      <form (ngSubmit)="formSubmit()">
+      
+        <div class="row">
+        
+          <div class="col">
+            <img src="https://welovedevs.com/_next/image?url=https%3A%2F%2Fprocess.filestackapi.com%2Foutput%3Dquality%3A80%2Fno_metadata%2Fauto_image%2Fcompress%2FM4yGTmrYRE6o8IGXYKjF&w=1920&q=75"
+            style="height: auto;max-width: 100%;">
+          </div>
+    
+          
+          <div class="col1">
+              <mat-card style="margin-right: 10%;">
+            <h2 class="text-center">Sign In</h2>
+         
+            <div>
+            <input [(ngModel)]="logindata.username" type="text" name="username" placeholder="Enter username" required>
+            </div>
+            <input [(ngModel)]="logindata.password" type="password" name="password" placeholder="Enter password" required>
+            
+            <div class="btn-toolbar">
+            <button type="submit" style="background-color: #841c9e;color: white;">Login</button>
+           
+        </div>
+        <div>
+            <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account ? <a routerLink='/signup'
+                class="link-danger" >Register</a></p>
+          </div>
+        </mat-card>
+          </div>
+     
+     
+      </div>
+  
+    
+      </form>
+    
+ 
+      </body>
+    
